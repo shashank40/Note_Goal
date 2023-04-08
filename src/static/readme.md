@@ -1,0 +1,1 @@
+To store all statics such as images, favicons
