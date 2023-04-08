@@ -1,5 +1,5 @@
 export interface goal {
-    priority: number,
+    priority: string,
     goal: string,
     completed: boolean,
 }
@@ -10,17 +10,17 @@ export interface goal {
 /// the property correctly as in the interface but with a _ in front of it
 // so we also need to give some default values so that check that yes _priority and priority are same
 
-export default class goalElement implements goal{
+export default class GoalElement implements goal{
 
-    constructor(private _priority: number = 0,
+    constructor(private _priority: string = "",
                 private _goal: string = "",
                 private _completed: boolean = false) {}
 
-    get priority(): number {
+    get priority(): string {
         return this._priority;
     }
     
-    set priority(priority: number){
+    set priority(priority: string){
         this._priority = priority;
     }
 
