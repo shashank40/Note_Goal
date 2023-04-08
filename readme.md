@@ -1,3 +1,7 @@
+#Access the live app here :
+https://note-goal.vercel.app/
+
+
 The project uses VITE to create a Typescript project
 
 #To run the project on local:
