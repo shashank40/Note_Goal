@@ -25,6 +25,7 @@ export default class FullGoals implements fullGoalList{
 
      deleteGoal(priority: string): void {
          this._goalList = this._goalList.filter((goal) => goal.priority !== priority);
+         this.saveGoalList();
      }
 
      saveGoalList(): void {
